@@ -1,39 +1,45 @@
 <p>
-    <i>( Describe task in general )</i>
+    Let's work with numbers.
 </p>
 
 <p>
-    Sum two passed ints
+    You are given an array of numbers (floats). You should find the difference between the maximum and th minimum elements.
+    Your function should receive the variable number of arguments.
 </p>
 
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
 
-<p><i>( Explain input and output values )</i></p>
-<p>
-    <strong>Input: </strong> Two arguments. Both are int
-</p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Hints: </strong> How to work with
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/tutorial/controlflow.html#arbitrary-argument-lists">the variable number of arguments</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists">the variable number of arguments</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Input: </strong> the variable number of arguments, numbers.
+</p>
+
+<p>
+    <strong>Output: </strong> The difference between maximum and minimum.
 </p>
 
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
     <p>
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
+checkio(1, 2, 3) == 2
+checkio(5, -5) == 10
+checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
     </pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    Here you will learn about the variable number of arguments for functions.
 </p>
