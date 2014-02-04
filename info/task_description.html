@@ -4,10 +4,20 @@
 
 <p>
     You are given an array of numbers (floats). You should find the difference between the maximum and th minimum elements.
-    Your function should receive the variable number of arguments.
+    Your function should receive the variable number of arguments. For the empty arguments list function should return 0.
 </p>
 
+<p>
+    Floating-point numbers are represented in computer hardware as base 2 (binary) fractions
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/library/decimal.html">(read about it)</a>.
+    {% else %}
+    <a href="http://docs.python.org/2/library/decimal.html">(read about it)</a>.
+    {% endif %}
 
+    So we check the result with 3 (three) significant digits precision
+
+</p>
 
 <p>
     <strong>Hints: </strong> How to work with
@@ -19,7 +29,7 @@
 </p>
 
 <p>
-    <strong>Input: </strong> the variable number of arguments, numbers.
+    <strong>Input: </strong> The variable number of arguments, numbers.
 </p>
 
 <p>
@@ -36,6 +46,7 @@
 checkio(1, 2, 3) == 2
 checkio(5, -5) == 10
 checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+checkio() == 0
     </pre>
 </div>
 
