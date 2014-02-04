@@ -58,10 +58,20 @@
     border-color: #de0202;
 }
 
+.animation-content .explanation {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 20px;
+    color: #294270;
+    font-weight: bold;
+}
+
+
 .tryit-content {
     background-color: #dfe8f7;
-    font-family: verdana;
+    font-family: Verdana, Arial, sans-serif;
 }
+
+
 
 .tryit-content .tool td{
     text-align: center;

@@ -77,34 +77,42 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             }
             //Dont change the code before it
 
-            //Your code here about test explanation animation
-            //$content.find(".explanation").html("Something text for example");
-            //
-            //
-            //
-            //
-            //
-
+            $content.find(".explanation").html(explanation);
 
             this_e.setAnimationHeight($content.height() + 60);
 
         });
 
-        //This is for Tryit (but not necessary)
-//        var $tryit;
-//        ext.set_console_process_ret(function (this_e, ret) {
-//            $tryit.find(".checkio-result").html("Result<br>" + ret);
-//        });
-//
-//        ext.set_generate_animation_panel(function (this_e) {
-//            $tryit = $(this_e.setHtmlTryIt(ext.get_template('tryit'))).find('.tryit-content');
-//            $tryit.find('.bn-check').click(function (e) {
-//                e.preventDefault();
-//                this_e.sendToConsoleCheckiO("something");
-//                e.stopPropagation();
-//                return false;
-//            });
-//        });
+        var $tryit;
+
+        ext.set_console_process_ret(function (this_e, ret) {
+            $tryit.find(".checkio-result").html("Your Result<br>" + ret);
+        });
+
+        ext.set_generate_animation_panel(function (this_e) {
+            $tryit = $(this_e.setHtmlTryIt(ext.get_template('tryit'))).find('.tryit-content');
+            $tryit.find('.bn-check').click(function (e) {
+                e.preventDefault();
+                var $input = $tryit.find(".tool .input-numbers");
+                var raw = $input.val().match(/-?\d+/g);
+                var data = raw.map(Number);
+                $input.val(data.join(" "));
+                this_e.sendToConsoleCheckiO(data);
+                e.stopPropagation();
+                return false;
+            });
+
+            $tryit.find('.bn-random').click(function (e) {
+                e.preventDefault();
+                var quantity = Math.floor(Math.random() * 10) + 1;
+                var data = [];
+                for (var i = 0; i < quantity; i++) {
+                    data.push((Math.floor(Math.random() * 200) - 100) / 10);
+                }
+                $tryit.find(".tool .input-numbers").val(data.join(" "));
+                return false;
+            });
+        });
 
         var colorOrange4 = "#F0801A";
         var colorOrange3 = "#FA8F00";
