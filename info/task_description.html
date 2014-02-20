@@ -6,24 +6,24 @@
 </p>
 
 <p>
-    You are given an array of numbers (floats). You should find the difference between the maximum and th minimum elements.
-    Your function should receive the variable number of arguments. For the empty arguments list function should return 0.
+    You are given an array of numbers (floats). You should find the difference between the maximum and minimum elements.
+    Your function should receive the variable number of arguments. For an empty argument list, the function should return 0.
 </p>
 
 <p>
     Floating-point numbers are represented in computer hardware as base 2 (binary) fractions
     {% if "python 2" in interpreter|lower %}
-    <a href="http://docs.python.org/2/tutorial/floatingpoint.html">(read about this)</a>.
+    <a href="http://docs.python.org/2/tutorial/floatingpoint.html">(read about this here)</a>.
     {% else %}
-    <a href="http://docs.python.org/3/tutorial/floatingpoint.html">(read about this)</a>.
+    <a href="http://docs.python.org/3/tutorial/floatingpoint.html">(read about this here)</a>.
     {% endif %}
 
-    So we check the result with &plusmn;0.001 precision.
+    So we should check the result with &plusmn;0.001 precision.
 
 </p>
 
 <p>
-    <strong>Hints: </strong> How to work with
+    <strong>Hints: </strong> Think about how to work with
     {% if "python 2" in interpreter|lower %}
     <a href="http://docs.python.org/2/tutorial/controlflow.html#arbitrary-argument-lists">the variable number of arguments</a>.
     {% else %}
@@ -55,5 +55,5 @@ checkio() == 0
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    Here you will learn about the variable number of arguments for functions.
+    Here you will learn about using the variable number of arguments for functions.
 </p>
