@@ -1,0 +1,73 @@
+<img class="for_info_only" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
+     style="width: 300px;float: right; margin-top: 15px; "/>
+
+<p>
+    Давайте поработаем с числами.
+</p>
+
+<p>
+    Дан массив чисел (float или/и int).
+    Вам нужно найти разницу между самым большим (максимум) и самым малым (минимум) элементом.
+    Ваша функция должна уметь работать с неопределным количеством аргументов.
+    Если аргументов нет, то функция возвращает 0 (ноль).
+</p>
+
+<p>
+    Числа с плавающей точкой представлены в компьютерах как двоичная дробь
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/tutorial/floatingpoint.html">(прочитать здесь)</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/tutorial/floatingpoint.html">(прочитать здесь)</a>.
+    {% endif %}
+
+    Результат проверяется с точностью до третьего знака, как &plusmn;0.001
+</p>
+
+<p>
+    <strong>Замечания: </strong> Прочитайте о том как работать с
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/tutorial/controlflow.html#arbitrary-argument-lists">переменым числом аргументов</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists">переменым числом аргументов</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Вх. данные: </strong> Переменное число аргументов как числа (int, float).
+</p>
+
+<p>
+    <strong>Вых. данные: </strong> Разница между максимумом и минимумом как число (int, float).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Примеры:</strong>
+    </p>
+    <pre class="brush: python">
+checkio(1, 2, 3) == 2
+checkio(5, -5) == 10
+checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+checkio() == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Как это используется: </strong>
+    В этой задаче вы научитесь как работать с неопределенным числом аргументов.
+</p>
+
+<p>
+    <strong>Предусловия: </strong>
+    0 &le; len(args) &le; 20<br>
+    all(-100 &lt; x &lt; 100 for x in args)<br>
+    all(isinstance(x, (int, float) 100 for x in args)
+</p>
+
+<div class="facts for_info_only">
+    <p>
+        Ваш голос становится значимым при росте в уровнях.
+        Начиная с 5ого уровня вы можете голосовать за публикацию дважды и начиная с 14ого, вы можете голоосовать уже 5 раз.
+    </p>
+</div>
