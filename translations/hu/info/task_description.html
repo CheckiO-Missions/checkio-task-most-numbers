@@ -1,0 +1,75 @@
+<img class="for_info_only" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
+     style="width: 300px;float: right; margin-top: 15px; "/>
+
+<p>
+    Gyerünk és foglalkozzunk egy kicsit a számokkal.
+</p>
+
+<p>
+    Adott egy számokból (float és/vagy int) álló tömb. Meg kell határozni a különbséget 
+    a legnagyobb (maximális) és legkisebb (minimális) tömbelem között. A függvényének 
+    nem meghatározott számú argumentummal kell működnie. Ha nincsenek megadva argumentumok, 
+    akkor a függvénynek vissza kell adnia azt, hogy 0 (nulla).
+</p>
+
+<p>
+    A lebegőpontos számok a számítógépben bináristörtként vannak ábrázolva (részletesebben angolul
+    {% if "python 2" in interpreter|lower %}
+    (<a href="http://docs.python.org/2/tutorial/floatingpoint.html">itt</a> lehet olvasni róla). 
+    {% else %}
+    (<a href="http://docs.python.org/3/tutorial/floatingpoint.html">itt</a> lehet olvasni róla). 
+    {% endif %}
+
+    Az eredményt a tizedes vessző utáni harmadik számjegy pontosságával kell megadni, 
+    azaz  &plusmn;0,001.
+</p>
+
+<p>
+    <strong>Megjegyzés: </strong> Прочитайте о том как работать с
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/tutorial/controlflow.html#arbitrary-argument-lists">переменым числом аргументов</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists">переменым числом аргументов</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Bemeneti adatok: </strong> változó mennyiségű argumentum egész vagy valós számokként (int, float).
+</p>
+
+<p>
+    <strong>Kimeneti adatok: </strong> a maximum és a minimum közötti különbség egész vagy valós számként  (int, float).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Példák</strong>
+    </p>
+    <pre class="brush: python">
+checkio(1, 2, 3) == 2
+checkio(5, -5) == 10
+checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+checkio() == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Alkalmazása: </strong>
+    Ennek a feladatnak a segítségével meg lehet tanulni a változószámú argumentumok használatát.
+</p>
+
+<p>
+    <strong>Előfeltételek: </strong><br>
+    0 &le; len(args) &le; 20<br>
+    all(-100 &lt; x &lt; 100 for x in args)<br>
+    all(isinstance(x, (int, float) 100 for x in args)
+</p>
+
+<div class="facts for_info_only">
+    <p>
+        Az Ön szavazata egyre jelentősebbé válik a szintlépések során. Az 5-ik 
+        szinttől kezdve egy publikációra kétszer, míg a 14-ik színtől kezdve – 
+        már ötször is szavazhat!
+    </p>
+</div>
