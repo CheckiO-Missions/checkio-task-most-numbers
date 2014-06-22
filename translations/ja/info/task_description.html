@@ -1,0 +1,75 @@
+﻿<img class="for_info_only" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
+     style="width: 300px;float: right; margin-top: 15px; "/>
+
+<p>
+	数を使ってみましょう。
+</p>
+
+<p>
+	数(浮動小数点数)の配列が与えられます。
+	あなたは最大の要素と最少の要素の差を求めなければいけません。
+	あなたの関数は不定個の入力パラメータを扱えなければいけません。
+	空の入力パラメータについては、0を返さなければいけません。
+</p>
+
+<p>
+	浮動小数点数はコンピュータハードウェアの内部では基数2(2進数)の分数で表現されています。
+    {% if "python 2" in interpreter|lower %}
+    (<a href="http://docs.python.jp/2/tutorial/floatingpoint.html">ここを読んでみてください</a>)。
+    {% else %}
+    (<a href="http://docs.python.jp/3/tutorial/floatingpoint.html">ここを読んでみてください</a>)。
+    {% endif %}
+
+	我々は&plusmn;0.001の精度で結果を判定します。
+
+</p>
+
+<p>
+    <strong>ヒント: </strong> 以下を使って、どのように動作するか考えてください。
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.jp/2/tutorial/controlflow.html#arbitrary-argument-lists">任意個の関数パラメータ</a>.
+    {% else %}
+    <a href="http://docs.python.jp/3/tutorial/controlflow.html#arbitrary-argument-lists">任意個の関数パラメータ</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>入力: </strong> 任意個の関数パラメータ、数 (整数、浮動小数点数)。
+</p>
+
+<p>
+    <strong>出力: </strong> 最大値と最小値の差、数 (整数、浮動小数点数)。
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>例:</strong>
+    </p>
+    <pre class="brush: python">
+checkio(1, 2, 3) == 2
+checkio(5, -5) == 10
+checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+checkio() == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>どのように使われるか: </strong>
+	ここであなたは不定個の関数パラメータが渡されることについて学ぶでしょう。
+</p>
+
+<p>
+    <strong>事前条件: </strong>
+    0 &le; len(args) &le; 20<br>
+    all(-100 &lt; x &lt; 100 for x in args)<br>
+    all(isinstance(x, (int, float) 100 for x in args)
+</p>
+
+<div class="facts for_info_only">
+    <p>
+		レベルが上がるにしたがって、あなたが投票できる回数は増えます。
+		レベル5からは他人が公表した解答に2回まで投票できます。
+		レベル14からは5回に増えます!
+    </p>
+</div>
