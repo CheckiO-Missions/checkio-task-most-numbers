@@ -1,0 +1,73 @@
+<img class="for_info_only" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
+     style="width: 300px;float: right; margin-top: 15px; "/>
+
+<p>
+    On va travailler avec les nombres.
+</p>
+
+<p>
+    On vous donne une liste de nombres (floats). Vous devez trouver la diff&eacute;rence entre les &eacute;l&eacute;ments maximal et minimal.
+    Votre fonction doit &ecirc;tre capable de g&eacute;rer un nombre ind&eacute;fini d'arguments.
+    Pour une liste d'arguments vide, la fonction doit retourner 0.
+</p>
+
+<p>
+    Les nombres &agrave; virgule flottante (floats) sont repr&eacute;sent&eacute;s dans les ordinateurs par des fractions en base 2 (binaires).
+    {% if "python 2" in interpreter|lower %}
+    (<a href="http://docs.python.org/2/tutorial/floatingpoint.html">Plus d'informations &agrave; ce propos ici</a>).
+    {% else %}
+    (<a href="http://docs.python.org/3/tutorial/floatingpoint.html">Plus d'informations &agrave; ce propos ici</a>).
+    {% endif %}
+
+    On doit v&eacute;rifier le r&eacute;sultat avec une pr&eacute;cision de &plusmn;0.001.
+
+</p>
+
+<p>
+    <strong>Conseils : </strong> Pensez &agrave; comment travailler avec 
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/tutorial/controlflow.html#arbitrary-argument-lists">un nombre arbitraire d'arguments</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists">un nombre arbitraire d'arguments</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Entr&eacute;e : </strong> un nombre arbitraire d'arguments en tant que nombre (int, float).
+</p>
+
+<p>
+    <strong>Sortie : </strong> La diff&eacute;rence entre le maximum et le minimum en tant que nombre (int, float).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Exemple :</strong>
+    </p>
+    <pre class="brush: python">
+checkio(1, 2, 3) == 2
+checkio(5, -5) == 10
+checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+checkio() == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>&Agrave; quoi cela sert : </strong>
+    Ici vous allez apprendre comment passer un nombre ind&eacute;fini d'arguments &agrave; une fonction.
+</p>
+
+<p>
+    <strong>Pr&eacute;condition : </strong>
+    0 &le; len(args) &le; 20<br>
+    all(-100 &lt; x &lt; 100 for x in args)<br>
+    all(isinstance(x, (int, float)) for x in args)
+</p>
+
+<div class="facts for_info_only">
+    <p>
+        Votre vote prend de plus en plus de valeur au fur et &agrave; mesure que vous avancez dans les niveaux.
+        &Agrave; partir du niveau 5, vous pouvez attribuer un vote de +2 et &agrave; partir du niveau 14, un vote de +5 !
+    </p>
+</div>
