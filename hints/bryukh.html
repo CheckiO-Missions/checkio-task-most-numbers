@@ -1,0 +1,48 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        I have no idea how to start solving this mission
+    </div>
+    <div class="answer">
+        If you see a function definition like "def function(*args):",
+        then this function can work with an arbitrary number of arguments.
+        You can work with "args" as with a tuple.
+<pre class="brush: python">
+def func(*args):
+    for x in args:
+        print(x)
+
+func(1, 2, 3)
+func(2)
+func()
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I need some help to proceed with the mission
+    </div>
+    <div class="answer">
+        You can easily find the minimum and maximum with the built-in functions "min" and "max".
+<pre class="brush: python">
+max([1, 2, 3, 100]) == 100
+min([1, 2, 3, 100]) == 1
+min((0.1, 1)) == 0.1
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am gone half way through. Need help!
+    </div>
+    <div class="answer">
+        Don't forget about the empty arguments list. Check it before the min-max.
+<pre class="brush: python">
+if args:
+    something
+else:
+    return 0
+    </pre>
+    </div>
+</div>
+</body>
