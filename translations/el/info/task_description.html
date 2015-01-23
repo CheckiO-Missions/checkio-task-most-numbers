@@ -1,0 +1,69 @@
+﻿<img class="for_info_only" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
+     style="width: 300px;float: right; margin-top: 15px; "/>
+
+<p>
+    Ας δουλέψουμε με αριθμούς.
+</p>
+
+<p>
+    Σου δίνεται ένας πίνακας αριθμών (πραγματικών). Σκοπός είναι να υπολογίσεις τη διαφορά ανάμεσα στο μικρότερο και το μεγαλύτερο στοιχείο του.
+    Η συναρτηση που θα φτιάξεις θα δέχεται έναν οποιονδήποτε αριθμό παραμέτρων. Σε περίπτωση που η λίστα παραμέτρων είναι κενή, η συνάρτηση θα επιστρέφει τον αριθμό 0.
+</p>
+
+<p>
+    Οι δεκαδικοί αριθμοί στον υπολογιστή αναπαριστώνται σαν κλάσματα με βάση το 2 (δυαδικά).
+    {% if "python 2" in interpreter|lower %}
+    (<a href="http://docs.python.org/2/tutorial/floatingpoint.html">διάβασε περισσότερα εδώ</a>).
+    {% else %}
+    (<a href="http://docs.python.org/3/tutorial/floatingpoint.html">διάβασε περισσότερα εδώ</a>).
+    {% endif %}
+
+    Επομένως, θα εξετάσουμε το αποτέλεσμα με ακρίβεια &plusmn;0.001.<br>
+    Σκέψου πώς θα δουλέψεις με
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/tutorial/controlflow.html#arbitrary-argument-lists">έναν οποιονδήποτε αριθμό παραμέτρων
+        </a>.
+    {% else %}
+    <a href="http://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists">έναν οποιονδήποτε αριθμό παραμέτρων</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Είσοδος: </strong> Ένας οποιοσδήποτε αριθμός παραμέτρων σε μορφή ακέραιων ή πραγματικών αριθμών.
+</p>
+
+<p>
+    <strong>Έξοδος: </strong> Η διαφορά ανάμεσα στο μικρότερο και το μεγαλύτερο με μορφή ακέραιου ή πραγματικού αριθμού.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Παράδειγμα:</strong>
+    </p>
+    <pre class="brush: python">
+checkio(1, 2, 3) == 2
+checkio(5, -5) == 10
+checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+checkio() == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Πώς χρησιμοποιείται: </strong>
+    Εδώ θα μάθεις πώς να περνάς έναν απροσδιόριστο αριθμό παραμέτρων σε μια συνάρτηση.
+</p>
+
+<p>
+    <strong>Προϋποθέσεις: </strong>
+    0 &le; len(args) &le; 20<br>
+    all(-100 &lt; x &lt; 100 for x in args)<br>
+    all(isinstance(x, (int, float)) for x in args)
+</p>
+
+<div class="facts for_info_only">
+    <p>
+        Η ψήφος σου αποκτά μεγαλύτερη αξία όσο ανεβαίνεις επίπεδα. Ξεκινώντας από το επίπεδο 5 μπορείς να ψηφίσεις υπέρ μιας λύσης δύο φορές και
+        φτάνοντας στο επίπεδο 14 μέχρι 5 φορές!
+    </p>
+</div>
