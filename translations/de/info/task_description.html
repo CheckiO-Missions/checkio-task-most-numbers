@@ -2,47 +2,47 @@
      style="width: 300px;float: right; margin-top: 15px; "/>
 
 <p>
-    Let's work with numbers.
+    Lass uns mit Zahlen arbeiten.
 </p>
 
 <p>
-    You are given an array of numbers (floats). You should find the difference between the maximum and minimum element.
-    Your function should be able to handle an undefined amount of arguments. For an empty argument list, the function
-    should
-    return 0.
+    Gegeben wird ein Array mit Zahlen (Gleitkommazahlen, engl. floats). Du sollst die Differenz zwischen der gr&ouml;&beta;ten
+    und der kleinsten Zahl ermitteln.
+    Deine Funktion soll mit einer beliebigen Anzahl von Argumenten umgehen k&ouml;nnen.
+    Bei einer leeren Argumentliste soll die Funktion 0 zur&uuml;ckgeben.
 </p>
 
 <p>
-    Floating-point numbers are represented in computer hardware as base 2 (binary) fractions
+    Gleitkommazahlen werden in Computern als duale Zahlen dargestellt (bin&auml;r), dar&uuml;ber kannst Du
     {% if "python 2" in interpreter|lower %}
-    (<a href="http://docs.python.org/2/tutorial/floatingpoint.html">read about this here</a>).
+    (<a href="http://docs.python.org/2/tutorial/floatingpoint.html">hier</a>) mehr lesen.
     {% else %}
-    (<a href="http://docs.python.org/3/tutorial/floatingpoint.html">read about this here</a>).
+    (<a href="http://docs.python.org/3/tutorial/floatingpoint.html">hier</a>) mehr lesen.
     {% endif %}
 
-    So we should check the result with &plusmn;0.001 precision.<br>
-    Think about how to work with
+    Du solltest Dein Ergebnis mit einer Pr&auml;zision von &plusmn;0,001 angeben.<br>
+    Mach Dir Gedanken dar&uuml;ber , wie man mit
     {% if "python 2" in interpreter|lower %}
-    <a href="http://docs.python.org/2/tutorial/controlflow.html#arbitrary-argument-lists">an arbitrary number of
-        arguments</a>.
+    <a href="http://docs.python.org/2/tutorial/controlflow.html#arbitrary-argument-lists">einer beliebigen Anzahl von
+        Argumenten arbeitet</a>.
     {% else %}
-    <a href="http://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists">an arbitrary number of
-        arguments</a>.
+    <a href="http://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists">einer beliebigen Anzahl von
+        Argumenten arbeitet</a>.
     {% endif %}
 </p>
 
 <p>
-    <strong>Input: </strong> An arbitrary number of arguments as numbers (int, float).
+    <strong>Eingabe: </strong> Eine beliebige Anzahl von Argumenten als Zahlen (int, float).
 </p>
 
 <p>
-    <strong>Output: </strong> The difference between maximum and minimum as a number (int, float).
+    <strong>Ausgabe: </strong> Die Differenz zwischen der kleinsten und der gr&ouml;&beta;ten Zahl (int, float).
 </p>
 
 
 <div class="for_info_only">
     <p>
-        <strong>Example:</strong>
+        <strong>Beispiele:</strong>
     </p>
     <pre class="brush: python">
 checkio(1, 2, 3) == 2
@@ -53,12 +53,12 @@ checkio() == 0
 </div>
 
 <p class="for_info_only">
-    <strong>How it is used: </strong>
-    Here you will learn about passing an undefined amount of arguments to functions.
+    <strong>Wozu das gut ist: </strong>
+    In dieser Aufgabe kannst Du lernen, eine nicht definierte Menge von Argumenten an eine Funktion zu &uuml;bergeben.
 </p>
 
 <p>
-    <strong>Precondition: </strong>
+    <strong>Bedingungen: </strong>
     0 &le; len(args) &le; 20<br>
     all(-100 &lt; x &lt; 100 for x in args)<br>
     all(isinstance(x, (int, float)) for x in args)
@@ -66,7 +66,7 @@ checkio() == 0
 
 <div class="facts for_info_only">
     <p>
-        Your vote gains more value as you grow in level. Starting at level 5 you can upvote a publication twice and
-        starting at level 14, you can upvote something five times!
+        Deine Stimme gewinnt mehr Wert, wenn Du einen Level aufsteigst. Ab Level 5 kannst Du an eine Publikation bis zu
+        2 und ab Level 14 bis zu 5 Punkte vergeben!
     </p>
 </div>
