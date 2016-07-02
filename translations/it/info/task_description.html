@@ -1,0 +1,70 @@
+<img class="for_info_only" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
+     style="width: 300px;float: right; margin-top: 15px; "/>
+
+<p>
+    Lavoriamo coi numeri.
+</p>
+
+<p>
+    Ti viene data una lista di numeri (floats).
+    Devi trovare la differenza tra l'elemento massimo e quello minimo.
+    La tua funzione deve essere in grado di gestire un numero arbitrario di elementi.
+    Per una lista di argomenti vuota, la funzione deve restituire 0.
+</p>
+
+<p>
+    I numeri a virgola mobile sono rappresentati dall'hardware del computer come frazioni in base 2 (binarie)
+    {% if "python 2" in interpreter|lower %}
+    (<a href="http://docs.python.org/2/tutorial/floatingpoint.html">leggi di pi&ugrave; a proposito</a>).
+    {% else %}
+    (<a href="http://docs.python.org/3/tutorial/floatingpoint.html">leggi di pi&ugrave; a proposito</a>).
+    {% endif %}
+
+    Sunque dovremmo controllare il risultato con precisione &plusmn;0.001.<br>
+    Pensa a come lavorare con
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/tutorial/controlflow.html#arbitrary-argument-lists">un numero arbitrario di argomenti</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists">un numero arbitrario di argomenti</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Input: </strong> Un numero arbitrario di argomenti come numeri (interi, float).
+</p>
+
+<p>
+    <strong>Output: </strong> La differenza tra il massimo ed il minimo com un numero (intero, float).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Esempio:</strong>
+    </p>
+    <pre class="brush: python">
+checkio(1, 2, 3) == 2
+checkio(5, -5) == 10
+checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+checkio() == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Come si usa: </strong>
+    Imparerai a passare un numero indefinito di argomenti ad una funzione.
+</p>
+
+<p>
+    <strong>Prerequisiti: </strong>
+    0 &le; len(args) &le; 20<br>
+    all(-100 &lt; x &lt; 100 for x in args)<br>
+    all(isinstance(x, (int, float)) for x in args)
+</p>
+
+<div class="facts for_info_only">
+    <p>
+        Pi&ugrave; sali di livello pi&ugrave; il tuo voto vale.
+        Dal livello 5 puoi upvotare una pubblicazione due volte e dal livello 14 puoi upvotare qualcosa cinque volte!
+    </p>
+</div>
