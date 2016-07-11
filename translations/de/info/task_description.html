@@ -1,0 +1,72 @@
+<img class="for_info_only" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
+     style="width: 300px;float: right; margin-top: 15px; "/>
+
+<p>
+    Lass uns mit Zahlen arbeiten.
+</p>
+
+<p>
+    Gegeben wird ein Array mit Zahlen (Gleitkommazahlen, engl. floats). Du sollst die Differenz zwischen der gr&ouml;&beta;ten
+    und der kleinsten Zahl ermitteln.
+    Deine Funktion soll mit einer beliebigen Anzahl von Argumenten umgehen k&ouml;nnen.
+    Bei einer leeren Argumentliste soll die Funktion 0 zur&uuml;ckgeben.
+</p>
+
+<p>
+    Gleitkommazahlen werden in Computern als duale Zahlen dargestellt (bin&auml;r), dar&uuml;ber kannst Du
+    {% if "python 2" in interpreter|lower %}
+    (<a href="http://docs.python.org/2/tutorial/floatingpoint.html">hier</a>) mehr lesen.
+    {% else %}
+    (<a href="http://docs.python.org/3/tutorial/floatingpoint.html">hier</a>) mehr lesen.
+    {% endif %}
+
+    Du solltest Dein Ergebnis mit einer Pr&auml;zision von &plusmn;0,001 angeben.<br>
+    Mach Dir Gedanken dar&uuml;ber , wie man mit
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/tutorial/controlflow.html#arbitrary-argument-lists">einer beliebigen Anzahl von
+        Argumenten arbeitet</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists">einer beliebigen Anzahl von
+        Argumenten arbeitet</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Eingabe: </strong> Eine beliebige Anzahl von Argumenten als Zahlen (int, float).
+</p>
+
+<p>
+    <strong>Ausgabe: </strong> Die Differenz zwischen der kleinsten und der gr&ouml;&beta;ten Zahl (int, float).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+    <pre class="brush: python">
+checkio(1, 2, 3) == 2
+checkio(5, -5) == 10
+checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+checkio() == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Wozu das gut ist: </strong>
+    In dieser Aufgabe kannst Du lernen, eine nicht definierte Menge von Argumenten an eine Funktion zu &uuml;bergeben.
+</p>
+
+<p>
+    <strong>Bedingungen: </strong>
+    0 &le; len(args) &le; 20<br>
+    all(-100 &lt; x &lt; 100 for x in args)<br>
+    all(isinstance(x, (int, float)) for x in args)
+</p>
+
+<div class="facts for_info_only">
+    <p>
+        Deine Stimme gewinnt mehr Wert, wenn Du einen Level aufsteigst. Ab Level 5 kannst Du an eine Publikation bis zu
+        2 und ab Level 14 bis zu 5 Punkte vergeben!
+    </p>
+</div>

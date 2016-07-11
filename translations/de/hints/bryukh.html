@@ -1,0 +1,48 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        Ich habe keine Ahnung wo ich mit der L&ouml;sung anfangen soll.
+    </div>
+    <div class="answer">
+        Wenn eine Funktion so definiert ist: "def function (* args):" , dann kann diese Funktion mit einer beliebigen
+        Anzahl von Argumenten arbeiten.
+        Du kannst mit "args" wie mit Tupeln arbeiten.
+<pre class="brush: python">
+def func(*args):
+    for x in args:
+        print(x)
+
+func(1, 2, 3)
+func(2)
+func()
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich brauche etwas Hilfe um weiter zu kommen.
+    </div>
+    <div class="answer">
+        Du kannst ganz einfach die kleinste und die gr&ouml;&beta;te Zahl mit den integrierten Funktionen "min" und "max" finden.
+<pre class="brush: python">
+max([1, 2, 3, 100]) == 100
+min([1, 2, 3, 100]) == 1
+min((0.1, 1)) == 0.1
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich hab's fast. Bitte hilf mir!
+    </div>
+    <div class="answer">
+        Denk an die m&ouml;glicherweise leere Liste mit Argumenten! Pr&uuml;fe das zuerst.
+<pre class="brush: python">
+if args:
+    something
+else:
+    return 0
+    </pre>
+    </div>
+</div>
+</body>
