@@ -1,0 +1,15 @@
+"use strict";
+
+function mostNumbers(numbers){
+    return numbers
+}
+
+var assert = require('assert');
+
+if (!global.is_checking) {
+    assert.equal(mostNumbers(1, 2, 3), 2, "3-1=2");
+    assert.equal(mostNumbers(5, -5), 3, "5-(-5)=10");
+    assert.equal(mostNumbers(10.2, -2.2, 0, 1.1, 0.5), 12.4, "10.2-(-2.2)=12.4");
+    assert.equal(mostNumbers(), 0, "Empty");
+    console.log("Coding complete? Click 'Check' to review your tests and earn cool rewards!");
+}
