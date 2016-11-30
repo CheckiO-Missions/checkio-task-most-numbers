@@ -1,5 +1,5 @@
-<img class="for_info_only" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
-     style="width: 300px;float: right; margin-top: 15px; "/>
+<img class="for_info_only half" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
+     style="float: left; "/>
 
 <p>
     Lass uns mit Zahlen arbeiten.
@@ -13,22 +13,11 @@
 </p>
 
 <p>
-    Gleitkommazahlen werden in Computern als duale Zahlen dargestellt (bin&auml;r), dar&uuml;ber kannst Du
-    {% if "python 2" in interpreter|lower %}
-    (<a href="http://docs.python.org/2/tutorial/floatingpoint.html">hier</a>) mehr lesen.
-    {% else %}
-    (<a href="http://docs.python.org/3/tutorial/floatingpoint.html">hier</a>) mehr lesen.
-    {% endif %}
+    Gleitkommazahlen werden in Computern als duale Zahlen dargestellt (bin&auml;r), dar&uuml;ber kannst Du.
 
     Du solltest Dein Ergebnis mit einer Pr&auml;zision von &plusmn;0,001 angeben.<br>
-    Mach Dir Gedanken dar&uuml;ber , wie man mit
-    {% if "python 2" in interpreter|lower %}
-    <a href="http://docs.python.org/2/tutorial/controlflow.html#arbitrary-argument-lists">einer beliebigen Anzahl von
-        Argumenten arbeitet</a>.
-    {% else %}
-    <a href="http://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists">einer beliebigen Anzahl von
-        Argumenten arbeitet</a>.
-    {% endif %}
+    Mach Dir Gedanken dar&uuml;ber , wie man mit Anzahl von
+        Argumenten arbeitet.
 </p>
 
 <p>
@@ -44,12 +33,21 @@
     <p>
         <strong>Beispiele:</strong>
     </p>
+{% if interpreter.slug == "js-node" %}
+    <pre class="brush: python">
+mostNumbers(1, 2, 3) == 2
+mostNumbers(5, -5) == 10
+mostNumbers(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+mostNumbers() == 0
+    </pre>
+{% else %}
     <pre class="brush: python">
 checkio(1, 2, 3) == 2
 checkio(5, -5) == 10
 checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
 checkio() == 0
     </pre>
+{% endif %}
 </div>
 
 <p class="for_info_only">

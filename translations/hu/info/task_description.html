@@ -1,5 +1,5 @@
-<img class="for_info_only" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
-     style="width: 300px;float: right; margin-top: 15px; "/>
+<img class="for_info_only half" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
+     style="float: left; "/>
 
 <p>
     Foglalkozzunk egy kicsit a számokkal!
@@ -13,26 +13,14 @@
 </p>
 
 <p>
-    A lebegőpontos számok a számítógépben bináristörtként vannak ábrázolva (részletesebben angolul
-    {% if "python 2" in interpreter|lower %}
-    (<a href="http://docs.python.org/2/tutorial/floatingpoint.html">itt</a> lehet olvasni róla). 
-    {% else %}
-    (<a href="http://docs.python.org/3/tutorial/floatingpoint.html">itt</a> lehet olvasni róla). 
-    {% endif %}
+    A lebegőpontos számok a számítógépben bináristörtként vannak ábrázolva (részletesebben angolul.
 
     Az eredményt a tizedes vessző utáni harmadik számjegy pontosságával kell megadni, 
     azaz  &plusmn;0,001.
 </p>
 
 <p>
-    <strong>Megjegyzés: </strong> olvassa el a 
-    {% if "python 2" in interpreter|lower %}
-    <a href="http://docs.python.org/2/tutorial/controlflow.html#arbitrary-argument-lists">változószámú argumentumokról </a>
-    szóló cikket (angolul).
-    {% else %}
-    <a href="http://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists">változószámú argumentumokról </a>
-    szóló cikket (angolul).
-    {% endif %}
+    <strong>Megjegyzés: </strong> olvassa el a változószámú argumentumokról.
 </p>
 
 <p>
@@ -48,12 +36,21 @@
     <p>
         <strong>Példák:</strong>
     </p>
+    {% if interpreter.slug == "js-node" %}
+    <pre class="brush: python">
+mostNumbers(1, 2, 3) == 2
+mostNumbers(5, -5) == 10
+mostNumbers(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+mostNumbers() == 0
+    </pre>
+{% else %}
     <pre class="brush: python">
 checkio(1, 2, 3) == 2
 checkio(5, -5) == 10
 checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
 checkio() == 0
     </pre>
+{% endif %}
 </div>
 
 <p class="for_info_only">

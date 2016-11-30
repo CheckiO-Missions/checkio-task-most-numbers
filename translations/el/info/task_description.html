@@ -1,5 +1,5 @@
-﻿<img class="for_info_only" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
-     style="width: 300px;float: right; margin-top: 15px; "/>
+﻿<img class="for_info_only half" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
+     style="float: left; "/>
 
 <p>
     Ας δουλέψουμε με αριθμούς.
@@ -12,20 +12,9 @@
 
 <p>
     Οι δεκαδικοί αριθμοί στον υπολογιστή αναπαριστώνται σαν κλάσματα με βάση το 2 (δυαδικά).
-    {% if "python 2" in interpreter|lower %}
-    (<a href="http://docs.python.org/2/tutorial/floatingpoint.html">διάβασε περισσότερα εδώ</a>).
-    {% else %}
-    (<a href="http://docs.python.org/3/tutorial/floatingpoint.html">διάβασε περισσότερα εδώ</a>).
-    {% endif %}
 
     Επομένως, θα εξετάσουμε το αποτέλεσμα με ακρίβεια &plusmn;0.001.<br>
-    Σκέψου πώς θα δουλέψεις με
-    {% if "python 2" in interpreter|lower %}
-    <a href="http://docs.python.org/2/tutorial/controlflow.html#arbitrary-argument-lists">έναν οποιονδήποτε αριθμό παραμέτρων
-        </a>.
-    {% else %}
-    <a href="http://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists">έναν οποιονδήποτε αριθμό παραμέτρων</a>.
-    {% endif %}
+    Σκέψου πώς θα δουλέψεις με έναν οποιονδήποτε αριθμό παραμέτρων.
 </p>
 
 <p>
@@ -41,12 +30,21 @@
     <p>
         <strong>Παράδειγμα:</strong>
     </p>
+{% if interpreter.slug == "js-node" %}
+    <pre class="brush: python">
+mostNumbers(1, 2, 3) == 2
+mostNumbers(5, -5) == 10
+mostNumbers(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+mostNumbers() == 0
+    </pre>
+{% else %}
     <pre class="brush: python">
 checkio(1, 2, 3) == 2
 checkio(5, -5) == 10
 checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
 checkio() == 0
     </pre>
+{% endif %}
 </div>
 
 <p class="for_info_only">
