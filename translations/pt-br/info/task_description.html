@@ -1,0 +1,68 @@
+<img class="for_info_only half" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
+     style="float: left; "/>
+
+<p>
+    Vamos trabalhar com números.
+</p>
+
+<p>
+    Você receberá um array de números (floats). Você deverá encontrar a diferença entre o maior e o menor elemento.
+    A sua função deverá ser capaz de receber uma quantidade indefinida de argumentos. Para uma lista de argumentos vazia, a função
+    deverá
+    retornar 0.
+</p>
+
+<p>
+    Números de ponto flutuante são representados no hardware do computador na forma de frações em base 2 (binário).
+    Então nós devemos checar o resultado com precisão de &plusmn;0.001.<br>
+    Pense em como trabalhar com um número arbitrário de argumentos. 
+</p>
+
+<p>
+    <strong>Entrada: </strong> Um número arbitrário de argumentos como números (int, float).
+</p>
+
+<p>
+    <strong>Saída: </strong> A diferença entre maior e menor como número (int, float).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Exemplo:</strong>
+    </p>
+{% if interpreter.slug == "js-node" %}
+    <pre class="brush: python">
+mostNumbers(1, 2, 3) == 2
+mostNumbers(5, -5) == 10
+mostNumbers(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+mostNumbers() == 0
+    </pre>
+{% else %}
+    <pre class="brush: python">
+checkio(1, 2, 3) == 2
+checkio(5, -5) == 10
+checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+checkio() == 0
+    </pre>
+{% endif %}
+</div>
+
+<p class="for_info_only">
+    <strong>Como é utilizado: </strong>
+    Aqui você irá aprender como passar um número indefinido de argumentos para funções. 
+</p>
+
+<p>
+    <strong>Precondição: </strong>
+    0 &le; len(args) &le; 20<br>
+    all(-100 &lt; x &lt; 100 for x in args)<br>
+    all(isinstance(x, (int, float)) for x in args)
+</p>
+
+<div class="facts for_info_only">
+    <p>
+        Seu voto ganha mais valor à medida que você sobe de nível. A partir do nível 5 você pode dar dois upvotes e 
+        a partir do nível 14, você pode dar upvotes até cinco vezes!
+    </p>
+</div>
