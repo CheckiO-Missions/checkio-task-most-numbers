@@ -1,0 +1,49 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+		Eu não tenho ideia de como começar a resolver essa missão
+    </div>
+    <div class="answer">
+		Se você se deparar com uma definição de função parecida com "def function(*args):",
+		então essa função pode trabalhar com um número arbitrário de argumentos. 
+		Você pode trabalhar com "args" da mesma forma que trabalha com tuplas.
+<pre class="brush: python">
+def func(*args):
+    for x in args:
+        print(x)
+
+func(1, 2, 3)
+func(2)
+func()
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+		Eu preciso de alguma ajuda para continuar com essa missão
+    </div>
+    <div class="answer">        
+		Você pode encontrar o máximo e o mínimo facilmente com as funções embutidas "min"
+		e "max"
+<pre class="brush: python">
+max([1, 2, 3, 100]) == 100
+min([1, 2, 3, 100]) == 1
+min((0.1, 1)) == 0.1
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+		Já consegui fazer metade. Preciso de ajuda!
+    </div>
+    <div class="answer">
+		Não se esqueça da lista de argumentos vazia. Faça essa checagem antes do min-max.
+<pre class="brush: python">
+if args:
+    alguma-coisa
+else:
+    return 0
+    </pre>
+    </div>
+</div>
+</body>
