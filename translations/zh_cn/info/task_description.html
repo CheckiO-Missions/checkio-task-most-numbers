@@ -1,0 +1,65 @@
+<img class="for_info_only half" title="ruler" src="{{MEDIA}}ruler.png" alt="ruler"
+     style="float: left; "/>
+
+<p>
+    让我们开始处理数字吧！
+</p>
+
+<p>
+    给你一个数字（包括浮点数）组成的数组，你要找出数组中的最大、最小值的差值。
+    你的函数应该能处理一些特殊情况，如果传入了一个空的数组，函数应该返回0。
+</p>
+
+<p>
+    浮点数在计算机硬件中以二进制的小数来表示。
+    所以我们可以以 &plusmn;0.001的精度来验证结果，想想怎么处理不确定数量的参数吧！
+</p>
+
+<p>
+    <strong>输入: </strong> 一个由任意多个数字组成的参数（int，float类型）。
+</p>
+
+<p>
+    <strong>输出 </strong> 数组中最大值和最小值的差值（int，float类型）。
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>举个栗子:</strong>
+    </p>
+{% if interpreter.slug == "js-node" %}
+    <pre class="brush: python">
+mostNumbers(1, 2, 3) == 2
+mostNumbers(5, -5) == 10
+mostNumbers(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+mostNumbers() == 0
+    </pre>
+{% else %}
+    <pre class="brush: python">
+checkio(1, 2, 3) == 2
+checkio(5, -5) == 10
+checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
+checkio() == 0
+    </pre>
+{% endif %}
+</div>
+
+<p class="for_info_only">
+    <strong>你将学到什么: </strong>
+    在这个任务中你将学会函数将如何处理任意数量的参数。
+</p>
+
+<p>
+    <strong>Precondition: </strong>
+    0 &le; len(args) &le; 20<br>
+    all(-100 &lt; x &lt; 100 for x in args)<br>
+    all(isinstance(x, (int, float)) for x in args)
+</p>
+
+<div class="facts for_info_only">
+    <p>
+        Your vote gains more value as you grow in level. Starting at level 5 you can upvote a publication twice and
+        starting at level 14, you can upvote something five times!
+    </p>
+</div>
