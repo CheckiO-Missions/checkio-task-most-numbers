@@ -2,7 +2,7 @@ import assert from "assert";
 
 function mostNumbers(): number {
     // your code here
-    return undefined;
+    return 0;
 }
 
 console.log('Example:');
