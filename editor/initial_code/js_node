@@ -1,6 +1,6 @@
 import assert from "assert";
 
-function mostNumbers(): number {
+function mostNumbers(...args: number[]): number {
     // your code here
     return 0;
 }
